@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Our Menu</h1>
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+    <ul class="menu-list">
+      <li>Chicken</li>
+      <li>Beef</li>
+      <li>Sushi</li>
+    </ul>
+  </header>
+
+  <div class="container">
+    <div class="menu-card">
+      <h2>Chicken</h2>
+      <p>Delicious chicken dishes cooked to perfection.</p>
+    </div>
+    <div class="menu-card">
+      <h2>Beef</h2>
+      <p>Tender beef recipes that will satisfy your cravings.</p>
+    </div>
+    <div class="menu-card">
+      <h2>Sushi</h2>
+      <p>Fresh and flavorful sushi creations for sushi lovers.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var menuList = document.querySelector('.menu-list');
+      menuList.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
